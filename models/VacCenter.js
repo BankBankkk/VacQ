@@ -9,14 +9,14 @@ const VacCenter = function(vacCenter) {
 
 };
 
-VacCenter .getAll = result => {
+VacCenter.getAll = result => {
     sql.query("SELECT * FROM vacCenters", (err, res) => {
         if (err) {
         console. log("error: ", err);
         result(null, err);
         return;
         }
-        
+
         console.log("vacCenters: ", res);
         result(null, res);
         });

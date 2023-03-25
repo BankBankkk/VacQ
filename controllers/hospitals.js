@@ -1,6 +1,6 @@
 const { Query } = require('mongoose');
 const Hospital = require('../models/Hospital');
-const vacCenter=require('../models/Vaccenter');
+const vacCenter = require('../models/VacCenter');
 
 //@desc Get vaccine centers
 //@route GET/api/v1/hospitals/vaccenters/
